@@ -1,6 +1,6 @@
 import React from "react";
-import { LoginButton, LogoutButton } from "../components/LoginButtons";
-import LoggedIn from "../components/LoggedIn";
+import { LoginButton, LogoutButton } from "./LoginButtons";
+import LoggedIn from "./LoggedIn";
 
 export class LoginControl extends React.Component {
   constructor(props) {
