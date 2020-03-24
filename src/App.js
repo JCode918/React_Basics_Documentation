@@ -1,5 +1,6 @@
 import React from 'react';
 import Clock from './components/Clock'
+import Toggle from './components/Toggle'
 
 import Greetings from './components/FunctionComponent'
 //import { Welcome, GoodBye } from './components/ClassComponent'
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Clock/>
+        <Toggle/>
         <Greetings name='J.R.' />
         <Greetings name='Manka.' />
         <Greetings name='Jazz' />
