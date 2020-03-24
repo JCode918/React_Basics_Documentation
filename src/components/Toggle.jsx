@@ -6,8 +6,8 @@ export class Toggle extends React.Component {
     this.state = {
       isToggleOn: true,
     };
-    // Must utilize this to create a binding
-    this.handleClick = this.handleClick.bind(this);
+    // Must utilize this to create a binding, if you use the syntax <Button onClick={() => this.handleClick()} its not needed
+    //this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
@@ -18,7 +18,7 @@ export class Toggle extends React.Component {
 
   render(){
       return(
-      <button onClick={this.handleClick}>{this.state.isToggleOn ? 'ON' : 'OFF'}</button>
+      <button onClick={() => this.handleClick()}>{this.state.isToggleOn ? 'ON' : 'OFF'}</button>
       )
   }
 }
