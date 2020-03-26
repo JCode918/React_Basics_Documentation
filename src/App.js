@@ -1,21 +1,19 @@
 import React from 'react';
 import './App.css';
-import NumberList from './components_chapter8/NumberList'
-import Blog from './components_chapter8/BlogContent'
-
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const onlinePosts = [
-  { id: 1, title: 'Hello World', content: 'Welcome to learning React!' },
-  { id: 2, title: 'Installation', content: 'You can install React from npm.' }
-];
+import NameForm from './components_chapter9/NameForm'
+import EssayForm from './components_chapter9/EssayForm'
+import SelectForm from './components_chapter9/SelectForm'
+import Reservation from './components_chapter9/Reservation'
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NumberList numbers={numbers} />
-        <Blog posts={onlinePosts} />
+       {/*  <NameForm />
+        <EssayForm />
+        <SelectForm /> */}
+        <Reservation/>
       </header>
     </div>
   );
