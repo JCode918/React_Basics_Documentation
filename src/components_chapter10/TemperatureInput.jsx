@@ -3,6 +3,7 @@ import React from "react";
 const scaleNames = {
   c: "Celsius",
   f: "Fahrenheit",
+  k: "Kelvin"
 };
 
 class TemperatureInput extends React.Component {

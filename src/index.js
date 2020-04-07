@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 
  ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App increment={5} />
   </React.StrictMode>,
   document.getElementById('root')
 ); 
